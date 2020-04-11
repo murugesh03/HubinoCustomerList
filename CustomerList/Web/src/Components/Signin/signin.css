@@ -1,0 +1,112 @@
+textarea:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+.mainSignin {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgb(251, 251, 251) 0%,
+    rgb(206, 223, 255) 100%,
+    rgb(229, 12, 255) 100%,
+    rgb(160, 0, 255) 100%
+  );
+}
+.innerSignin {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 24%;
+  margin: auto;
+  padding: 3rem;
+  background: white;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0px 1px 16px 3px #908b8b45;
+}
+
+.mainForm > input {
+  width: 100%;
+  border: none;
+  height: 10%;
+  border-bottom: 1px solid #b7b7b7;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+::-webkit-input-placeholder {
+  color: #b7b7b7;
+  font-size: 14px;
+  font-weight: bold;
+}
+::-moz-placeholder {
+  color: #b7b7b7;
+  font-size: 14px;
+  font-weight: bold;
+}
+:-ms-input-placeholder {
+  color: #b7b7b7;
+  font-size: 14px;
+  font-weight: bold;
+}
+:-moz-placeholder {
+  color: #b7b7b7;
+  font-size: 14px;
+  font-weight: bold;
+}
+.submitButton {
+  border: 1px solid black;
+  background: white;
+  border-radius: 40px;
+  padding-left: 20%;
+  padding-right: 20%;
+  cursor: pointer;
+  width: 35%;
+  padding: 0;
+  margin-left: 65%;
+  margin-top: 6%;
+  border-color: #d500e8;
+  padding-bottom: 10px;
+  padding: 10px 17px 10px 15px;
+}
+.submitButton > span > p {
+  background: -webkit-linear-gradient(#d707f5, #3600ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  margin: 0;
+}
+.signinText {
+  width: 71%;
+  height: 90px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  background: -webkit-linear-gradient(#d707f5, #3600ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+  margin: 0;
+  margin-top: 6%;
+}
+@media only screen and (max-width: 750px) {
+  .mainForm {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    padding: 1.9rem;
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 758px) {
+  .mainForm {
+    width: 50%;
+  }
+}

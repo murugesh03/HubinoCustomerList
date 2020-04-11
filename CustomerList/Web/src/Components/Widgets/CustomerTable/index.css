@@ -1,0 +1,29 @@
+.mainTable {
+  border: 1px solid #eaeaea;
+  padding: 1rem;
+  background: #3fadf8;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.childTables {
+  padding: 1rem;
+  border-bottom: 1px solid #80808073;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.childTables:hover {
+  box-shadow: -2px 0px 8px 0px grey;
+}
+/* mobiles */
+
+/* mobile */
+@media only screen and (max-width: 750px) {
+  .childTables {
+    display: block;
+    background-color: white;
+  }
+}
